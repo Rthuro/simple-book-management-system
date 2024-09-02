@@ -1,5 +1,5 @@
-#Simple Book Management System using PHP
-Web Development Lab Activity #3
+#Simple Book Management System using PHP <br/>
+Web Development Lab Activity #3 <br/>
 **Features**
 - View list of books from the database
 -  Add a new book to the database
