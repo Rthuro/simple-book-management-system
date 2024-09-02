@@ -1,0 +1,98 @@
+main{
+    display: flex;
+    flex-direction: row;
+    gap:2vw;
+    margin-top: 1rem;
+}
+form{
+    border:1px solid rgb(207, 207, 207);
+    padding: 16px 20px;
+    border-radius: 0.4rem;
+}
+form h3{
+    border-bottom: 1px solid rgb(207, 207, 207);
+    padding-bottom: 0.4rem;
+}
+form,section{
+    display: flex;
+    flex-direction: column;
+}
+.form_row{
+    display: flex;
+    gap:8px;
+    align-items: center;
+}
+.err{
+    color: red;
+    font-size: 0.9rem;
+}
+.err.bookExists{
+    font-weight: 500;
+    color: rgb(247, 30, 30);
+    border: 1px solid rgb(247, 30, 30) ;
+    background-color: rgb(255, 223, 223);
+    padding:12px 0;
+    width:630px;
+    text-align: center;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+form input, form select{
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 0.2rem;
+    
+}
+form input:not(input[type ='range']), form select{
+    padding:6px ;
+    margin-bottom: 8px;
+}
+form input[type ='text'],form input[type ='number'], form select{
+    width:280px ;
+}
+label{
+    margin: 4px 0;
+}
+
+
+.age_rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14%;
+}
+.ratingContainer{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 2rem;
+    width: 40%;
+}
+.ratingContainer p{
+    font-size: 0.9rem;
+    margin:none;
+}
+form input[type ='range']{
+    width: 100%;
+}
+form input[type ='submit']{
+    width: 50%;
+    margin: 1.2rem 0;
+    
+    font-weight: 500;
+    padding:12px 0;
+    cursor: pointer;
+}
+form input[type ='submit']:last-child{
+    background-color: green;
+    color:white;
+    border:none;
+}
+form input[type ='submit']:last-child:hover{
+    background-color: rgba(0, 128, 0, 0.884);
+   
+}
+.bottomBttn{
+    display: flex;
+    flex-direction: row;
+    gap:0.8rem;
+}
