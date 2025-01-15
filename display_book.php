@@ -1,11 +1,6 @@
 <?php 
     require_once 'books.class.php';
     include_once('header.html');
-    // session_start();
-    
-    // if(!empty($_SESSION)){
-    //     $array = $_SESSION['books'];
-    // }
 
     $booksObj = new Book();
 
@@ -15,8 +10,8 @@
             <section id='deleteModal'>
                 <p>Confirm action? All records will be permanently deleted.</p>
                 <form action='' method='post'>
-                    <input type='submit' name='cancel' value='Cancel' id='cancel'>
-                    <input type='submit' name='confirm' value='Delete' id='confirm'>
+                    <input type='submit' name='cancel' value='Cancel' id='cancel'  style='cursor:pointer;'>
+                    <input type='submit' name='confirm' value='Delete' id='confirm' style='cursor:pointer;'>
                 </form>
             </section>";
         } 
@@ -66,7 +61,7 @@
         </tbody>
     </table>
     <form action='' method='post'>
-        <input type='submit' name='del_records' value ='Delete Records' id='delBttn'>
+        <input type='submit' name='del_records' value ='Delete Records' id='delBttn' style="cursor:pointer;">
     </form>
      
     <script>
