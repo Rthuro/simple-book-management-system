@@ -32,7 +32,9 @@ table,form, #deleteModal{
 }
 td{
     padding:12px;
-
+}
+table tr:hover{
+    background-color: rgb(233, 233, 233);
 }
 table{
     margin-bottom: 2vh;
@@ -43,7 +45,7 @@ table,td{
     border: 1px solid 	 #420e07;
     border-collapse: collapse;
     text-align: center;
-    
+    cursor: pointer;
 }
 thead td{
   background-color:  #8b0606;
