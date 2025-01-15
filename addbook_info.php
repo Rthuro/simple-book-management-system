@@ -72,19 +72,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addbook'])  ){
     $add_book = new Book();
 
     if(!empty($title) && !empty($author) && !empty($genre) && !empty($publisher) && !empty($date) && !empty($edition) && !empty($copies) && !empty($format) && !empty($age_group)){
-      
-        // session_start();
-        // $newBook = array('title' => $title, 'author' => $author,
-        // 'genre' => $genre, 'publisher' => $publisher,
-        // 'date' => $date, 'edition' => $edition,
-        // 'copies' => $copies, 'format' => $format,
-        // 'age group' => $age_group  , 'rating' => $rating );
 
-        // $data = $_SESSION['books'];
-        // $data[] = $newBook;
-        // $_SESSION['books'] = $data;
-
-        if($add_book -> checkDuplicate($title, $author, $genre, $publisher, $date, $edition,$copies, $format, $age_group,$rating) == true){
+        if($add_book -> checkDuplicate($title, $author, $genre, $publisher, $date, $edition,$copies, $format, $age_group,$rating)){
             echo "<p class='err bookExists'>Book Information Already Exists</p>";
         } else{
             $age_group = implode(", ", $age_group);
